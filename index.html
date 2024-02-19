@@ -67,14 +67,14 @@
           <tr>
             <td><img src="assets/temperature.png" alt="banana" /></td>
             <td><p class="typetext">K1</p></td>
-            <td><input type="number" id="k1" name="Kevin 1" /></td>
-            <td><p>Kevins</p></td>
+            <td><input type="number" id="k1" name="Kelvin 1" /></td>
+            <td><p>Kelvins</p></td>
           </tr>
           <tr>
             <td><img src="assets/temperature.png" alt="banana" /></td>
             <td><p class="typetext">K2</p></td>
-            <td><input type="number" id="k2" name="Kevin 2" /></td>
-            <td><p>Kevins</p></td>
+            <td><input type="number" id="k2" name="Kelvin 2" /></td>
+            <td><p>Kelvins</p></td>
           </tr>
         </table>
       </div>
@@ -83,24 +83,22 @@
         <img src="assets/superboy.png" alt="superboy" class="superboy" />
         <div class="buttondiv">
           <div class="allbutton">
-            <button type="button" class="button">Change Unit</button>
-            <button
-              class="button"
-              id="mybutton"
-              onclick="calculate()"
-            >
-              Calculate
-            </button>
+            <button class="button" onclick="clickchangeUnit()">Change Unit</button>
 
-            <button
-              class="button"
-              onclick="clear()"
-            >
-              Clear
-            </button>
+            <button class="button" id="mybutton" onclick="calculate()">Calculate</button>
+
+            <button class="button" onclick="clear_all()">Clear</button>
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="temp">
+        <h3>Celcius: </h3>
+        <p id="cel"></p>
+        <h3>Ferenheit: </h3>
+        <p id="fer"></p>
     </div>
   </body>
 </html>

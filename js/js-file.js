@@ -76,17 +76,22 @@ function clickchangeUnit () {
 }
 
 function changeUnit(k1, k2) {
+    alert("change unit");
     var result_k1;
     var result_k1;
 
     result_k1 = k1 - 273.15; // celcius
     result_k1 = (k1 - 273.15) * (9/5) + 32; //Ferenheit
 
-    alert(result_k1);
-
     var result_k2;
     var result_k2;
 
     result_k2 = k2 - 273.15; // celcius
     result_k2 = (k2 - 273.15) * (9/5) + 32; // Ferenheit
+
+    var changed_C = document.getElementById('cel').value;
+    var changed_F = document.getElementById('fer').value;
+
+    changed_C.textContent = result_k1;
+    changed_F.textContent = result_k1;
 }
