@@ -35,9 +35,11 @@ function calculate() {
         } else if (isNaN(k1)) {
             var newk1 = ((b1 * p1 * k2) / (b2 * p2)).toFixed(2);
             document.getElementById('k1').value = newk1; 
+            k1 = newk1;
         } else if (isNaN(k2)) {
             var newk2 = ((b2 * p2 * k1) / (b1 * p1)).toFixed(2);
             document.getElementById('k2').value = newk2;
+            k2 = newk2;
         }
     } else {
         alert("You need at least 5 value in the form!");
@@ -64,6 +66,11 @@ function clear_all() {
     document.getElementById("p2").value = "";
     document.getElementById("k1").value = "";
     document.getElementById("k2").value = "";
+    document.getElementById("cel").innerHTML = "Celcius";
+    document.getElementById("fer").innerHTML = "Ferenheit";
+    document.getElementById("cel2").innerHTML = "Celcius";
+    document.getElementById("fer2").innerHTML = "Ferenheit";
+
 }
 
 
@@ -76,22 +83,21 @@ function clickchangeUnit () {
 }
 
 function changeUnit(k1, k2) {
-    alert("change unit");
-    var result_k1;
-    var result_k1;
+    var cel_k1;
+    var fer_k1;
 
-    result_k1 = k1 - 273.15; // celcius
-    result_k1 = (k1 - 273.15) * (9/5) + 32; //Ferenheit
+    cel_k1 = k1 - 273.15; // celcius
+    fer_k1 = (k1 - 273.15) * (9/5) + 32; //Ferenheit
 
-    var result_k2;
-    var result_k2;
+    var cel_k2;
+    var fer_k2;
 
-    result_k2 = k2 - 273.15; // celcius
-    result_k2 = (k2 - 273.15) * (9/5) + 32; // Ferenheit
+    cel_k2 = k2 - 273.15; // celcius
+    fer_k2 = (k2 - 273.15) * (9/5) + 32; // Ferenheit
 
-    var changed_C = document.getElementById('cel').value;
-    var changed_F = document.getElementById('fer').value;
+    document.getElementById('cel').innerHTML = cel_k1.toFixed(2); 
+    document.getElementById('fer').innerHTML = fer_k1.toFixed(2);
 
-    changed_C.textContent = result_k1;
-    changed_F.textContent = result_k1;
+    document.getElementById('cel2').innerHTML = cel_k2.toFixed(2); 
+    document.getElementById('fer2').innerHTML = fer_k2.toFixed(2);
 }
