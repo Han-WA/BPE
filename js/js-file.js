@@ -58,13 +58,21 @@ function countNaN(el_list) {
 }
 
 function clear_all() {
-
     document.getElementById("b1").value = '';
     document.getElementById("b2").value = "";
     document.getElementById("p1").value = "";
     document.getElementById("p2").value = "";
     document.getElementById("k1").value = "";
     document.getElementById("k2").value = "";
+}
+
+
+
+function clickchangeUnit () {
+    var temp1 = k1;
+    var temp2 = k2;
+
+    changeUnit(temp1, temp2);
 }
 
 function changeUnit(k1, k2) {
