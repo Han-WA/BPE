@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/js-file.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <img src="assets/logo.png" alt="logo" />
+      <div>
+        <h1>The Banana-Papaya Experiment</h1>
+        <div class="byline">
+          <div class="supertext">
+            <h3>By Superman</h3>
+          </div>
+
+          <div class="super">
+            <img src="assets/super.gif" alt="Superman" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bodypart">
+      <div>
+        <table>
+          <tr>
+            <th></th>
+            <th>Type</th>
+            <th>Enter value</th>
+            <th>Unit</th>
+          </tr>
+          <tr>
+            <td><img src="assets/banana.png" alt="banana" /></td>
+            <td><p class="typetext">B1</p></td>
+            <td><input type="number" id="b1" name="Banana 1" /></td>
+            <td><p>Bananas</p></td>
+          </tr>
+          <tr>
+            <td><img src="assets/banana.png" alt="banana" /></td>
+            <td><p class="typetext">B2</p></td>
+            <td><input type="number" id="b2" name="Banana 1" /></td>
+            <td><p>Bananas</p></td>
+          </tr>
+          <tr>
+            <td><img src="assets/papaya.png" alt="banana" /></td>
+            <td><p class="typetext">P1</p></td>
+            <td><input type="number" id="p1" name="Papaya 1" /></td>
+            <td><p>Papayas</p></td>
+          </tr>
+          <tr>
+            <td><img src="assets/papaya.png" alt="banana" /></td>
+            <td><p class="typetext">P2</p></td>
+            <td><input type="number" id="p2" name="Papaya 2" /></td>
+            <td><p>Papayas</p></td>
+          </tr>
+          <tr>
+            <td><img src="assets/temperature.png" alt="banana" /></td>
+            <td><p class="typetext">K1</p></td>
+            <td><input type="number" id="k1" name="Kevin 1" /></td>
+            <td><p>Kevins</p></td>
+          </tr>
+          <tr>
+            <td><img src="assets/temperature.png" alt="banana" /></td>
+            <td><p class="typetext">K2</p></td>
+            <td><input type="number" id="k2" name="Kevin 2" /></td>
+            <td><p>Kevins</p></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="calculatepart">
+        <img src="assets/superboy.png" alt="superboy" class="superboy" />
+        <div class="buttondiv">
+          <div class="allbutton">
+            <button type="button" class="button">Change Unit</button>
+            <button
+              class="button"
+              id="mybutton"
+              onclick="calculate()"
+            >
+              Calculate
+            </button>
+
+            <button
+              class="button"
+              onclick="clear()"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

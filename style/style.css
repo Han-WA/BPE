@@ -1,0 +1,101 @@
+body {
+    background-color: #FDFFAB;
+}
+
+nav {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+nav>img {
+    height: 10%;
+}
+
+nav>div>h3 {
+    font-style: italic;
+}
+
+nav>div {
+    margin-left: 3%;
+}
+
+.bodydiv {
+    display: flex;
+}
+
+.super>img{
+    width: 100px;
+}
+
+.byline {
+    display: flex;
+}
+
+table {
+    /* margin-top: 10%; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 10%;
+}
+
+td .typetext{
+    margin-left: 45%;
+}
+
+td>img {
+    width: 50px;
+}
+
+input[type="number"] {
+    border-radius: 50px; 
+    padding: 8px; 
+    border: 2px solid #ccc; 
+    height: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buttondiv {
+    margin-left: 12%;
+}
+
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 100px;
+    margin-right: 200px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 170px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.button:hover {opacity: 1}
+
+.bodypart {
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.calculatepart {
+    align-items: center;
+}
