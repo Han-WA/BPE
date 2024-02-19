@@ -1,11 +1,12 @@
+var b1, b2, p1, p2, k1, k2;
+
 function calculate() {
-    alert("calculate function");
-    var b1 = parseFloat(document.getElementById("b1").value);
-    var b2 = parseFloat(document.getElementById('b2').value);
-    var p1 = parseFloat(document.getElementById('p1').value);
-    var p2 = parseFloat(document.getElementById('p2').value);
-    var k1 = parseFloat(document.getElementById('k1').value);
-    var k2 = parseFloat(document.getElementById('k2').value);
+    b1 = parseFloat(document.getElementById("b1").value);
+    b2 = parseFloat(document.getElementById('b2').value);
+    p1 = parseFloat(document.getElementById('p1').value);
+    p2 = parseFloat(document.getElementById('p2').value);
+    k1 = parseFloat(document.getElementById('k1').value);
+    k2 = parseFloat(document.getElementById('k2').value);
 
     var el_list = [];
 
@@ -56,12 +57,28 @@ function countNaN(el_list) {
     return count;
 }
 
-function clear() {
-    alert("L");
-    // document.getElementById("b1").value = "";
-    // document.getElementById("b2").value = "";
-    // document.getElementById("p1").value = "";
-    // document.getElementById("p2").value = "";
-    // document.getElementById("k1").value = "";
-    // document.getElementById("k2").value = "";
+function clear_all() {
+
+    document.getElementById("b1").value = '';
+    document.getElementById("b2").value = "";
+    document.getElementById("p1").value = "";
+    document.getElementById("p2").value = "";
+    document.getElementById("k1").value = "";
+    document.getElementById("k2").value = "";
+}
+
+function changeUnit(k1, k2) {
+    var result_k1;
+    var result_k1;
+
+    result_k1 = k1 - 273.15; // celcius
+    result_k1 = (k1 - 273.15) * (9/5) + 32; //Ferenheit
+
+    alert(result_k1);
+
+    var result_k2;
+    var result_k2;
+
+    result_k2 = k2 - 273.15; // celcius
+    result_k2 = (k2 - 273.15) * (9/5) + 32; // Ferenheit
 }

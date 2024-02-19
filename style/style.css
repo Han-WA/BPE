@@ -73,8 +73,8 @@ input[type="number"] {
     padding: 20px 20px;
     text-align: center;
     font-size: 16px;
-    margin-left: 100px;
-    margin-right: 200px;
+    margin-left: 60px;
+    /* margin-right: 200px; */
     opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
@@ -94,8 +94,11 @@ input[type="number"] {
     justify-content: space-around;
 }
 
+.superboy {
+    margin-left: 200px;
+}
 
-
-.calculatepart {
-    align-items: center;
+.allbutton {
+    display: flex;
+    justify-content: space-around;
 }
